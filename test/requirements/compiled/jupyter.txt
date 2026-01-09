@@ -44,7 +44,7 @@ fastjsonschema==2.19.1
     # via nbformat
 fqdn==1.5.1
     # via jsonschema
-idna==3.6
+idna==3.7
     # via
     #   anyio
     #   jsonschema
@@ -255,7 +255,7 @@ terminado==0.18.0
     #   jupyter-server-terminals
 tinycss2==1.2.1
     # via nbconvert
-tornado==6.4
+tornado==6.5
     # via
     #   ipykernel
     #   jupyter-client
