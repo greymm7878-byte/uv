@@ -44,7 +44,7 @@ fastjsonschema==2.19.1
     # via nbformat
 fqdn==1.5.1
     # via jsonschema
-idna==3.6
+idna==3.7
     # via
     #   anyio
     #   jsonschema
@@ -117,7 +117,7 @@ jupyter-server==2.12.5
     #   notebook-shim
 jupyter-server-terminals==0.5.2
     # via jupyter-server
-jupyterlab==4.0.11
+jupyterlab==4.4.8
     # via notebook
 jupyterlab-pygments==0.3.0
     # via nbconvert
@@ -139,7 +139,7 @@ mistune==3.0.2
     # via nbconvert
 nbclient==0.9.0
     # via nbconvert
-nbconvert==7.14.2
+nbconvert==7.16.6
     # via
     #   jupyter
     #   jupyter-server
@@ -150,7 +150,7 @@ nbformat==5.9.2
     #   nbconvert
 nest-asyncio==1.6.0
     # via ipykernel
-notebook==7.0.7
+notebook==7.5.2
     # via jupyter
 notebook-shim==0.2.3
     # via
@@ -255,7 +255,7 @@ terminado==0.18.0
     #   jupyter-server-terminals
 tinycss2==1.2.1
     # via nbconvert
-tornado==6.4
+tornado==6.5
     # via
     #   ipykernel
     #   jupyter-client
