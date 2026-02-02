@@ -486,7 +486,7 @@ fn dependency_excludes_range_of_compatible_versions() {
 /// There is a non-contiguous range of compatible versions for the requested package
 /// `a`, but another dependency `c` excludes the range. This is the same as
 /// `dependency-excludes-range-of-compatible-versions` but some of the versions of
-/// `a` are incompatible for another reason e.g. dependency on non-existant package
+/// `a` are incompatible for another reason e.g. dependency on non-existent package
 /// `d`.
 ///
 /// ```text
@@ -1213,7 +1213,7 @@ fn local_simple() {
         , @r###"<snapshot>
     "###);
 
-    // The verison '1.2.3+foo' satisfies the constraint '==1.2.3'.
+    // The version '1.2.3+foo' satisfies the constraint '==1.2.3'.
     assert_installed(&context.venv, "a_f9205f5d", "1.2.3+foo", &context.temp_dir);
 }
 
@@ -1249,7 +1249,7 @@ fn local_not_used_with_sdist() {
         , @r###"<snapshot>
     "###);
 
-    // The verison '1.2.3' with an sdist satisfies the constraint '==1.2.3'.
+    // The version '1.2.3' with an sdist satisfies the constraint '==1.2.3'.
     assert_installed(&context.venv, "a_8bbb04bd", "1.2.3", &context.temp_dir);
 }
 
@@ -1286,7 +1286,7 @@ fn local_used_without_sdist() {
         , @r###"<snapshot>
     "###);
 
-    // The verison '1.2.3+foo' satisfies the constraint '==1.2.3'.
+    // The version '1.2.3+foo' satisfies the constraint '==1.2.3'.
     assert_installed(&context.venv, "a_d0971377", "1.2.3+foo", &context.temp_dir);
 }
 
@@ -1365,7 +1365,7 @@ fn local_transitive() {
         , @r###"<snapshot>
     "###);
 
-    // The verison '2.0.0+foo' satisfies both ==2.0.0 and ==2.0.0+foo.
+    // The version '2.0.0+foo' satisfies both ==2.0.0 and ==2.0.0+foo.
     assert_installed(&context.venv, "a_f3a05ff2", "1.0.0", &context.temp_dir);
     assert_installed(&context.venv, "b_f3a05ff2", "2.0.0+foo", &context.temp_dir);
 }
@@ -1407,7 +1407,7 @@ fn local_transitive_confounding() {
         , @r###"<snapshot>
     "###);
 
-    // The verison '1.2.3+foo' satisfies the constraint '==1.2.3'.
+    // The version '1.2.3+foo' satisfies the constraint '==1.2.3'.
     assert_installed(&context.venv, "a_1c6ea6d1", "2.0.0+foo", &context.temp_dir);
 }
 
@@ -2312,7 +2312,7 @@ fn package_only_prereleases_boundary() {
     "###);
 
     // Since there are only prerelease versions of `a` available, a prerelease is
-    // allowed. Since the user did not explictly request a pre-release, pre-releases at
+    // allowed. Since the user did not explicitly request a pre-release, pre-releases at
     // the boundary should not be selected.
     assert_installed(&context.venv, "a_edcef999", "0.1.0a1", &context.temp_dir);
 }
