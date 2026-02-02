@@ -84,7 +84,7 @@ dependencies = [
 
 [project.optional-dependencies]
 deploy = [
-  "gunicorn==22.0.0",
+  "gunicorn==25.0.0",
   "ddtrace==2.8.5"
 ]
 
